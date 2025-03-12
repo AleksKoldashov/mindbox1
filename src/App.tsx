@@ -22,7 +22,7 @@ function App() {
 
   const handelChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setValueTodo(e.target.value);
+      setValueTodo(e?.target?.value);
     },
     []
   );
